@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project Portfolio | Team FAQ.J</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-gray-50 font-sans">
+ <nav class="bg-green-100 shadow-lg sticky top-0 z-50">
+  <div class="max-w-[80%] mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <a href="#home" class="text-green-800">
+          <div class="text-3xl font-bold" style="font-family: 'Birthstone', cursive;">
+            VERDANT
+          </div>
+        </a>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="hidden md:flex items-center space-x-8 text-base font-medium">
+        <a href="#home" class="flex items-center gap-2 text-gray-700 hover:text-green-700 transition">
+          <i class="fas fa-leaf text-green-700"></i> Home
+        </a>
+        <a href="project.html" class="flex items-center gap-2 text-gray-700 hover:text-green-700 transition">
+          <i class="fas fa-leaf text-green-700"></i> Projects
+        </a>
+        <a href="#team" class="flex items-center gap-2 text-gray-700 hover:text-green-700 transition">
+          <i class="fas fa-leaf text-green-700"></i> Team
+        </a>
+        <a href="activity.html" class="flex items-center gap-2 text-gray-700 hover:text-green-700 transition">
+          <i class="fas fa-leaf text-green-700"></i> Activity
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+     <!-- Hero Section -->
+<section id="home" class="py-20 bg-gradient-to-br from-green-500 via-green-600 to-green-700 text-white">
+  <div class="max-w-[90%] lg:max-w-[80%] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+    <!-- Paragraph Intro -->
+    <div class="text-center fade-in">
+      <p class="text-xl md:text-2xl font-semibold leading-relaxed max-w-4xl mx-auto">
+        We are a group of aspiring programmers from CvSU-CCAT Rosario Campus who have come together to learn, grow, and create meaningful work by combining our individual specialties. United by a shared passion for technology and innovation, we aim to turn our ideas into impactful digital experiences.
+      </p>
+      <div class="mt-6">
+        <a href="#team" class="border-2 border-white text-white px-5 py-2 rounded-md font-medium hover:bg-green-400 transition duration-300">
+          Our Team
+        </a>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="relative fade-in h-[500px] overflow-hidden rounded-xl shadow-2xl">
+      <div id="iframe-carousel" class="flex h-full w-full transition-transform duration-500 ease-in-out">
+        <iframe src="https://zeiraphale.github.io" class="flex-shrink-0 w-full h-full border-none"></iframe>
+        <iframe src="https://yzenxo.github.io/portfolio/" class="flex-shrink-0 w-full h-full border-none"></iframe>
+        <iframe src="https://zeiraphale.github.io" class="flex-shrink-0 w-full h-full border-none"></iframe>
+        <iframe src="https://han-ai8.github.io/ImShanLeones.github.io" class="flex-shrink-0 w-full h-full border-none"></iframe>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-200 transition duration-300 z-10">
+        <i class="fas fa-chevron-left text-gray-800"></i>
+      </button>
+      <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white rounded-full p-3 shadow-lg hover:bg-gray-200 transition duration-300 z-10">
+        <i class="fas fa-chevron-right text-gray-800"></i>
+      </button>
+    </div>
+
+  </div>
+</section>
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-green-50">
+        <div class="w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-green-800 mb-4" style="font-family: 'Birthstone', cursive;">Team Profiles</h2>
+              
+                
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 ">
+                <div class="team-member bg-white rounded-xl overflow-hidden shadow-md transition duration-300 relative h-[700px] flex flex-col">
+                    <div class="overflow-hidden h-100">
+                        <img src="https://avatars.githubusercontent.com/zeiraphale"
+                             alt="Team Member 1"
+                             class="member-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 pb-20 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1" style="cursor: default;">Erli Santos</h3>
+                        <h3 class="text-xl text-gray-600 mb-2" style="cursor: default;"><i class="fab fa-github"></i> zeiraphale</h3>
+                        <p class="text-green-700 font-medium mb-3" style="font-family: 'Birthstone', cursive;"><i class="fa-solid fa-laptop-code mr-2"></i> Web Developer</p>
+                        <p class="text-gray-600 mb-4"></p>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-6 text-3xl text-green-800">
+                        <a href="https://github.com/zeiraphale" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/zeiraphale?tab=repositories" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fas fa-folder-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member bg-white rounded-xl overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="overflow-hidden h-100">
+                        <img src="https://avatars.githubusercontent.com/han-ai8"
+                             alt="Team Member 2"
+                             class="member-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 pb-20 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1" style="cursor: default;">Shan Chai Leones</h3>
+                        <h3 class="text-xl text-gray-600 mb-2" style="cursor: default;"><i class="fab fa-github"></i> han-ai8</h3>
+                        <p class="text-green-700 font-medium mb-3" style="font-family: 'Birthstone', cursive;"><i class="fa-solid fa-laptop-code mr-2"></i> Full Stack Developer</p>
+                        <p class="text-gray-600 mb-4"></p>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-6 text-3xl text-green-800">
+                        <a href="https://github.com/han-ai8" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/han-ai8?tab=repositories" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fas fa-folder-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member bg-white rounded-xl overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="overflow-hidden h-100">
+                        <img src="https://avatars.githubusercontent.com/yzenxo"
+                             alt="Team Member 3"
+                             class="member-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 pb-20 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1" style="cursor: default;">Steven B, Padolina</h3>
+                        <h3 class="text-xl text-gray-600 mb-2" style="cursor: default;"><i class="fab fa-github"></i> Yzenxo</h3>
+                        <p class="text-green-700 font-medium mb-3" style="font-family: 'Birthstone', cursive;"><i class="fa-solid fa-laptop-code mr-2"></i> Web Developer</p>
+                        <p class="text-gray-600 mb-4"></p>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-6 text-3xl text-green-800">
+                        <a href="https://github.com/Yzenxo" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Yzenxo?tab=repositories" class="text-green-700 hover:text-indigo-600 transition text-2xl">
+                            <i class="fas fa-folder-open"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member bg-white rounded-xl overflow-hidden shadow-md transition duration-300 relative">
+                    <div class="overflow-hidden h-100">
+                        <img src="https://avatars.githubusercontent.com/JulianSanding"
+                             alt="Team Member 4"
+                             class="member-img w-full h-full object-cover transition duration-500">
+                    </div>
+                    <div class="p-6 pb-20 text-center">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1" style="cursor: default;">Julian Sanding</h3>
+                        <h3 class="text-xl text-gray-600 mb-2" style="cursor: default;"><i class="fab fa-github"></i> JulianSanding</h3>
+                        <p class="text-green-700  font-medium mb-3" style="font-family: 'Birthstone', cursive;"><i class="fa-solid fa-laptop-code mr-2"></i> Backend developer</p>
+                        <p class="text-gray-600 mb-4"></p>
+                    </div>
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-6 text-3xl text-green-800">
+                        <a href="https://github.com/JulianSanding" class="text-green-700  hover:text-green-900 transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://github.com/JulianSanding?tab=repositories" class="text-green-700  hover:text-green-900 transition text-2xl">
+                            <i class="fas fa-folder-open"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.getElementById('iframe-carousel');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const iframes = carousel.querySelectorAll('iframe');
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                const offset = -currentIndex * 100;
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+
+                if (currentIndex < iframes.length - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                updateCarousel();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                } else {
+                    currentIndex = iframes.length - 1;
+                }
+                updateCarousel();
+            });
+        });
+    </script>
+    </section>
