@@ -59,14 +59,16 @@
       </p>
     </div>
 
-    <div class="flex justify-center">
-  <div class="w-full max-w-5xl">
-    <div id="activity-container"
-         class="bg-white rounded-[2.5rem] shadow-2xl p-10 overflow-y-auto max-h-[600px] min-h-[300px] space-y-8 text-left text-gray-800 transition-all duration-700 ease-in-out">
-      <!-- GitHub activity cards will be injected here -->
+    <!-- Content Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <!-- GitHub Feed -->
+      <div id="activity-container"
+           class="md:col-span-12 col-span-12 bg-white rounded-[2.5rem] shadow-2xl p-10 overflow-y-auto max-h-[600px] min-h-[300px] space-y-8 text-left text-gray-800 transition-all duration-700 ease-in-out">
+        <!-- GitHub activity cards will be injected here -->
+      </div>
     </div>
+
   </div>
-</div>
 </section>
 
  
@@ -117,7 +119,7 @@
             minute: '2-digit'
           });
 
-          const cardHTML = `
+         const cardHTML = `
   <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-[2rem] shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-2xl transition-all duration-300">
     <div class="flex-1 text-gray-800">
       <h4 class="font-bold text-xl mb-1">${repo.name}</h4>
